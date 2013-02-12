@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" href="lib/jquery.mobile-1.2.0.css" />
+<link rel="stylesheet" href="jquery.checklist.css"/>
+
+<script src="lib/jquery-1.8.2.js"></script>
+<script src="lib/jquery.mobile-1.2.0.js"></script>
+<script src="jquery.checklist.js"></script>
+
+<script>
+$(document).on("pageinit", function()
+{
+   	$("ul#checkall").checklist({multiple:true,checkall:true,theme:'c'});
+});
+</script>
+</head>
+<body>
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>My Checked List</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul id="checkall" data-role="listview" data-theme="c" data-divider-theme="a" data-inset="true">
+			<li id="list3" data-role="list-divider">Check all</li>
+			<li id="list3-item1" class="list3">Item 1</li>
+			<li id="list3-item2" class="list3">Item 2</li>
+			<li id="list3-item3" class="list3">Item 3</li> 
+			<li id="list4" data-role="list-divider">Page2</li>
+			<li id="list3-item4" class="list4">Item 4</li>
+			<li id="list3-item5" class="list4">Item 5</li>
+		</ul>
+		<a href="" id="getSelection3" data-role="button">OK</a>
+		<div id="result"></div>
+		<script>
+		$("#getSelection3").on("click", function(){
+			var selection = "selected id : ";
+			$('ul#checkall').getSelection().each(function(i){
+				selection += $(this).attr("id")+" , ";
+			});
+			$('#result').html( selection );	
+		});
+		</script> 
+	</div>
+</div>
+</body>
+</html>
