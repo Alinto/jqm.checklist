@@ -1,0 +1,27 @@
+.checkBtn {
+	padding: 0;
+	z-index: 2;
+	right:0px;
+	margin-top: -14px;
+    position: absolute;
+    top: 50%;
+    background:white;
+}
+
+li .checkBtn .ui-btn-inner {
+	padding-right: 0;
+	border-top:none;
+	visibility: hidden;
+}
+li.ui-li-divider .checkBtn .ui-btn-inner {
+	margin-left: 0px;
+	margin-top: 2px;
+}
+
+li .checkBtn.checked .ui-btn-inner {
+	visibility: visible;
+}
+
+.checkBtn .ui-icon {
+	right:2px;	
+}
