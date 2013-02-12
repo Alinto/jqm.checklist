@@ -1,11 +1,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="lib/jquery.mobile-1.2.0.css" />
-<link rel="stylesheet" href="jquery.checklist.css"/>
+<link rel="stylesheet" href="css/jquery.checklist.css"/>
 
 <script src="lib/jquery-1.8.2.js"></script>
 <script src="lib/jquery.mobile-1.2.0.js"></script>
-<script src="jquery.checklist.js"></script>
+<script src="js/jquery.checklist.js"></script>
 
 <script>
 $(document).on("pageinit", function()
@@ -22,6 +22,12 @@ $(document).on("pageinit", function()
 	</div><!-- /header -->
 
 	<div data-role="content">	
+	<pre>
+		$(document).on("pageinit", function()
+		{
+		   	$("ul").checklist({multiple:true, corners:"true"});
+		});
+	</pre>
 	<br/>
 		<ul id="multiple" data-select="checkbox" data-role="listview" data-theme="c" data-divider-theme="a" data-inset="true">
 			<li data-role="list-divider">Multiple selection with custom icons</li>
