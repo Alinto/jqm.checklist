@@ -2,7 +2,7 @@
 This plugin is used for transform jquery mobile listview in a selectable list.
 
 ## Resources
-Jquery
+Jquery<br/>
 Jquery mobile
 
 ## How to
@@ -20,4 +20,4 @@ You can customize some options when you call the function :
 
 ## Contributors
 
-* Alinto ([@alinto_news](https://twitter.com/alinto_news))
+* Alinto ([@alinto](https://twitter.com/alinto))
